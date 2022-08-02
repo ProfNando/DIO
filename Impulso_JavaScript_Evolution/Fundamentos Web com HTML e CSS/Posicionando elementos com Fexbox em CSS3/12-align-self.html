@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+           
+        }
+        .align-container{
+            align-items: center; 
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px ;
+            
+        }
+        .colum{
+            flex-direction: column;
+        }
+
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+
+
+    </style>
+
+    <title>Align Self</title>
+</head>
+<body>
+
+    <!--
+        Align-self -> é a propriedade que estabelece o alinhamento de modo individual sobre um determinado item.
+        Valores possiveis:
+        * auto: valor padrão, irá respeitar a definição de align-itens do container.
+        * flex-start: ao inicio do container.
+        * flex-end: ao final do container.
+        * center: relativo ao centro de acordo com o eixo
+        * stretch: ocupa todos os espaços relativos
+        * baseline: utiliza a linha base da tipografia.
+
+    -->
+    <h1>row</h1>
+    <section class="flex-container">
+        <div class="item ">AAAA</div>
+        <div class="item ">123</div>
+        <div class="item ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="item "> Item 4</div>
+    </section>
+
+    
+    <section class="flex-container">
+        <div class="item center">AAAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="item end"> Item 4</div>
+    </section>
+
+    
+    <section class="flex-container">
+        <div class="item center">AAAA</div>
+        <div class="item start">123</div>
+        <div class="item center"> Item 4</div>
+    </section>
+
+    <h1>Colum</h1>
+    <section class="flex-container colum">
+        <div class="item ">AAAA</div>
+        <div class="item ">123</div>
+        <div class="item ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="item "> Item 4</div>
+    </section>
+
+    
+    <section class="flex-container colum">
+        <div class="item center">AAAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="item end"> Item 4</div>
+    </section>
+
+    
+    <section class="flex-container colum">
+        <div class="item center">AAAA</div>
+        <div class="item start">123</div>
+        <div class="item center"> Item 4</div>
+    </section>
+
+    
+</body>
+</html>

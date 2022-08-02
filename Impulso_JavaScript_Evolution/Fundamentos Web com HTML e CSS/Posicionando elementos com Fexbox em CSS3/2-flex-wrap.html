@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+
+    <style>
+
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+            
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!--
+        Flex-wrap -> É a propriedade que define se os itens devem ou não quebrar a linha. Por padrão eles nao quebram a linha, isso faz com que os flex itens sejam compactados além do limite do conteúdo
+
+        Propriedades:
+        * nowrap: é o padrão, nao permite a quebra de linha.
+        * wrap: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado. 
+        * wrap-reverse: permite a quebra de linha assim que um dos itens não puder mais ser compactado, porém na direção contrária da linha, acima.
+    -->
+    
+    <h1 >NO Wrap</h1>
+
+    <div class="flex-container nowrap">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+
+    </div>
+
+    <h1 class="wrap">Wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+                
+    </div>
+
+    <h1 class="wrap">Wrap reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+                
+    </div>
+
+    
+
+</body>
+</html>

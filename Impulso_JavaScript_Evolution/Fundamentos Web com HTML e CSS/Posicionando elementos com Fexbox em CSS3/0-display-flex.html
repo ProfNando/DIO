@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+
+    <style>
+        .flex{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Oferece distribuição de espaço entre itens em uma interface e recursos de alinhamento.
+
+        Flex Conteiner -> é a tag que envolve os itens.
+        nela aplicamos a propriedade "Display: flex".
+        transforma todos os seus itens filhos em flex itens.
+        Propriedades relacionadas:
+        * display
+        * flex-direction
+        * flex-wrap
+        * flex-flow
+        * justify-content
+        * align-itens
+        * align-content
+
+        Flex-Item -> São elementos filhos diretos do flex conteiner. e também podem se tornar flex container.
+        Propriedades:
+        * flex-grow
+        * flex-basis
+        * flex-shrink
+        * flex
+        * order
+        * align-self
+
+    -->
+    <div class="flex">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+    </div>
+    
+</body>
+</html>

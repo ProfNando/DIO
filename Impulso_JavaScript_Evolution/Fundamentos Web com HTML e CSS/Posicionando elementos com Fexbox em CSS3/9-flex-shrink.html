@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            
+        }
+        .itens{
+            margin: 5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .shrink-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .shrink-1{
+           flex-shrink: 1;
+            flex-basis: 100px; 
+        }
+        .shrink-2{
+            flex-shrink: 2; 
+            flex-basis: 100px;
+        }
+        .shrink-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        .flex-grow-1{
+            flex-grow: 1; 
+            flex-basis: 100px;
+            
+        }
+
+
+    </style>
+
+    <title>Flex Shrink</title>
+</head>
+<body>
+
+    <!--
+        Flex-shrink -> é ap ropriedade que estabelece a capacidade e redução ou compressão do tamanho de um item
+    -->
+
+    <h1>Shrink 1</h1>
+    <div class="flex-container">
+        <div class="itens shrink-1 flex-grow-1">A</div>
+        <div class="itens shrink-1 flex-grow-1">B</div>
+        <div class="itens shrink-1 flex-grow-1">C</div>
+        <div class="itens shrink-1 flex-grow-1">D</div>
+        <div class="itens shrink-1 flex-grow-1">E</div>
+    </div>
+    
+    <h1>Shrink 1 com espaços diferentes</h1>
+    <div class="flex-container">
+        <div class="itens shrink-1 flex-grow-1">AAAA</div>
+        <div class="itens shrink-1 flex-grow-1">ItemB</div>
+        <div class="itens shrink-1 flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. ?</div>
+        <div class="itens shrink-1 flex-grow-1">D</div>
+        <div class="itens shrink-1 flex-grow-1">E</div>
+    </div>
+
+    <h1>Shrink 0 com basis 100px</h1>
+    <div class="flex-container">
+        <div class="itens shrink-0 flex-grow-1">AAAA</div>
+        <div class="itens shrink-0 flex-grow-1">B</div>
+        <div class="itens shrink-0 flex-grow-1">C </div>
+        <div class="itens shrink-0 flex-grow-1">D</div>
+        <div class="itens shrink-0 flex-grow-1">E</div>
+    </div>
+
+    <h1>Shrink variados</h1>
+    <div class="flex-container">
+        <div class="itens shrink-2 flex-grow-1">AAAA</div>
+        <div class="itens shrink-2 flex-grow-1">B</div>
+        <div class="itens shrink-3 flex-grow-1">C </div>
+        <div class="itens shrink-1 flex-grow-1">D</div>
+        <div class="itens shrink-0 flex-grow-1">E</div>
+    </div>
+
+</body>
+</html>

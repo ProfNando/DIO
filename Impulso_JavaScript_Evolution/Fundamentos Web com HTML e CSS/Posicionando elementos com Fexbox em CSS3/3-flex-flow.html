@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .flex-container{
+            display: flex;
+            
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;
+        }
+        .default{
+            flex-flow: row nowrap;
+        }
+        .wrap{
+            flex-flow:  row wrap;
+        }
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+        
+        .row-nowrap{
+            flex-flow: row-reverse nowrap;
+        }
+        .rowrev-wrap{
+            flex-flow: row-reverse wrap;
+        }
+
+        .rowrev-rewrap{
+            flex-wrap: row-reverse wrap-reverse ;
+        }
+
+    </style>
+
+    <title>Flex Flow</title>
+</head>
+<body>
+
+    <!--
+        Flex-flow -> é um atalho para as propriedades flex-direction e flex-wrap.
+        Seu uso nao é comum devido que quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é o nowrap
+    -->
+
+
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+
+    <h1>default nowrap</h1>
+
+    <div class="flex-container default">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+
+    <h1>Wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+
+    <h1>Wrap reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+
+    <h1>row-reverse nowrap</h1>
+
+    <div class="flex-container row-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+    
+    <h1>row-reverse wrap</h1>
+
+    <div class="flex-container rowrev-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+
+    <h1>row-reverse wrap-reverse</h1>
+
+    <div class="flex-container rowrev-rewrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+
+    </div>
+
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .itens{
+            background-color: blueviolet;
+            margin: 5px;
+            color: wheat;
+            text-align: center;
+            flex: 1;
+
+        }
+        .center{
+            align-items: center;
+        }
+        .flex{
+            flex: 1;
+        }
+        .strecth{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .colum{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 600px;
+            justify-content: center;
+        }
+        .central .itens{
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+
+    <title>Align Itens</title>
+</head>
+<body>
+
+    <!--
+        Align-Itens -> Trata do alinhamento dos flex-ittens de acordo com o eixo do container.
+        O alinhamento é diferente para quando os itens estão em colunas ou linhas. Permite o alinhamento central no eixo vertical.
+        Tipos de Alinhamento:
+
+        * center: alinhamento dos itens ao centro.
+        * stretch: parão, e os flex itens crescem igualmente
+        * flex-start: alinhamento dos itens no inicio.
+        * flex-end: alinhamento dos itens no final
+        * baseline: alinhamento de acordo com a linha base da tipografia dos itens.
+        
+    -->
+
+    <h1 style="text-align: center;">row</h1>
+
+    <h1>Align Content center</h1>
+
+    <section class="container center flex">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Strecth</h1>
+
+    
+    <section class="container  strecth">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Flex Start</h1>
+
+    
+    <section class="container  flex-start">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Flex End</h1>
+    
+    <section class="container  flex-end">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Baseline</h1>
+    
+    <section class="container  baseline">
+        <div class="itens">  Item 1</div>
+        <div class="itens">Lorem, ip <br> sum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg lo</div>
+    </section>
+
+    <h1 style="text-align: center;">colum</h1>
+
+    <h1>Flex Start</h1>
+
+    
+    <section class="container colum  flex-start">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Flex End</h1>
+    
+    <section class="container  colum flex-end">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Align Content center</h1>
+
+    <section class="container center flex colum">
+        <div class="itens">Item 1</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg</div>
+    </section>
+
+    <h1>Baseline</h1>
+    
+    <section class="container  baseline colum">
+        <div class="itens">  Item 1</div>
+        <div class="itens">Lorem, ip <br> sum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="itens">Item 33 Muito mais textodf dfsfslodfs adsdasddfg fhggdsadfghmgfdssfghgf dsdfgdas dfgdsdfg lo</div>
+    </section>
+
+    <h1></h1>
+
+    <section class="container central center">
+        <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor similique nobis iure dolores laborum nam, rerum quidem quas fugiat sequi at quo accusamus ad ea beatae sunt praesentium! Iusto.</div>
+    </section>
+    
+</body>
+</html>

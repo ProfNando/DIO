@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            font-size: 24px;
+            text-align: center;
+            margin: 10px;
+
+        }
+
+        .itens{
+            background-color: brown;
+            color: white;
+            margin: 5px;
+
+        }
+
+        .flex-1{
+            flex: 1;
+            /*grow = 1, shrink = 1, basis = 0.
+            */
+
+        }
+        .flex-2{
+            flex: 2;
+            /*grow = 1, shrink = 1, basis = 0.
+            */
+        }
+
+        .largura{
+            width: 200px;
+            min-width: 250px;
+        }    
+    </style>
+
+    <title>Atalho grow shrink basis</title>
+
+</head>
+<body>
+
+
+    <!--
+        Flex: Essa propriedade é um atalho ou abreviação de escrita para as propriedades: grow, shrink e basis
+    -->
+
+    <h1>Flex 1</h1>
+    <div class="flex-container">
+        <div class="itens flex-1">A</div>
+        <div class="itens flex-1">B <br></div>
+        <div class="itens flex-1">C</div>
+        <div class="itens flex-1">D</div>
+        <div class="itens flex-1">E</div>
+    </div>
+
+    <h1>Flex 2</h1>
+    <div class="flex-container">
+        <div class="itens flex-2">A</div>
+        <div class="itens flex-2">BBBBbbb</div>
+        <div class="itens flex-2">C</div>
+        <div class="itens flex-2">DD</div>
+        <div class="itens flex-2">E</div>
+    </div>
+
+    <h1>Flex mix</h1>
+    <div class="flex-container">
+        <div class="itens flex-1">A</div>
+        <div class="itens flex-1">BBBBbbb</div>
+        <div class="itens flex-1">C</div>
+        <div class="itens flex-1">DD</div>
+        <div class="itens flex-1">E</div>
+    </div>
+
+    <h1>width ignorado -> basis = 0</h1>
+    <div class="flex-container">
+        <div class="itens flex-1 largura">A</div>
+        <div class="itens flex-1 largura">BBBBbbb</div>
+        <div class="itens flex-1 largura">C</div>
+        <div class="itens flex-1 largura">DD</div>
+        <div class="itens flex-1 largura">E</div>
+    </div>
+    
+</body>
+</html>

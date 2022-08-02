@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    margin-bottom: 15px;
+}
+body{
+    background: gainsboro;
+}
+
+#title, .subtitle, .post-title{
+    color: blue;
+    
+}
+
+.title{
+    color: red;
+}
+
+.post-title{
+    font-size: 16;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.post{
+
+    background: #FFF;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px;
+
+}
